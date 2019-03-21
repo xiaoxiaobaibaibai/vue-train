@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>VueJS Tutorials</title>
+        <link href="style.css" rel="stylesheet" />
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <div id="vue-app">
+            <!-- <h1>{{ greet('afternoon') }}</h1>
+            <p>Name: {{ name}}</p>
+            <p>Job: {{ job }}</p>
+            <a v-bind:href="website">Web开发</a>
+            <input type="text" v-bind:value="name">
+            <p v-html="websiteTag"></p> -->
+
+            <h1>Events</h1>
+            <button @click="add(1)"> ADD </button>
+            <button V-on:click="subtract(1)">RM</button>
+            <button v-on:dblclick="add(10)"> ADD ten </button>
+            <button V-on:dblclick="subtract(10)">RM</button>
+            <p>My age is {{age}}</p>
+
+            <div id="canvas" v-on:mousemove="updateXY">{{ x }} , {{ y }} - 
+                <span @mousemove="stopMoving">STOP MOVING
+
+            </span></div>
+        </div>
+    </body>
+
+    <script src="app.js"></script>
+</html>
